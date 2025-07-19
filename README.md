@@ -14,16 +14,21 @@ A serverless web scraping solution built with AWS CDK v2, AWS Lambda, and Puppet
 
 ```
 ├── src/                    # Lambda function source code
-│   └── index.ts           # Main handler function
+│   ├── index.ts           # Main handler function
+│   └── scripts/           # Utility scripts
+│       └── scrapeGoogle.ts # Google scraping script
 ├── aws/                   # CDK infrastructure code
+│   ├── bin/
+│   │   └── aws.ts         # CDK app entry point
 │   ├── lib/
-│   │   ├── index.ts      # CDK app entry point
 │   │   └── lambda-puppeteer-stack.ts  # Stack definition
 │   ├── package.json      # CDK dependencies
 │   ├── tsconfig.json     # CDK TypeScript config
 │   └── cdk.json          # CDK configuration
+├── dist/                  # Compiled JavaScript output
 ├── package.json          # Main project dependencies
 ├── tsconfig.json         # Main TypeScript config
+├── .gitignore            # Git ignore patterns
 └── README.md
 ```
 
