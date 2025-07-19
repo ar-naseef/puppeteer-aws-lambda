@@ -1,0 +1,38 @@
+{
+  "name": "aws-lambda-puppeteer-cdk",
+  "version": "1.0.0",
+  "description": "CDK infrastructure for AWS Lambda Puppeteer function",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "deploy": "npm run build && cdk deploy --require-approval never",
+    "destroy": "cdk destroy",
+    "diff": "cdk diff",
+    "cdk": "cdk",
+    "bootstrap": "cdk bootstrap",
+    "synth": "cdk synth"
+  },
+  "keywords": [
+    "aws",
+    "cdk",
+    "lambda",
+    "infrastructure"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "aws-cdk-lib": "^2.120.0",
+    "constructs": "^10.3.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.130",
+    "@types/node": "^20.10.0",
+    "aws-cdk": "^2.120.0",
+    "typescript": "^5.3.2",
+    "ts-node": "^10.9.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

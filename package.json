@@ -1,0 +1,35 @@
+{
+  "name": "aws-lambda-puppeteer",
+  "version": "1.0.0",
+  "description": "AWS Lambda function using Puppeteer to scrape Google search results",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "cd aws && npm run deploy",
+    "destroy": "cd aws && npm run destroy",
+    "install-deps": "npm install && cd aws && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "puppeteer",
+    "webscraping",
+    "google",
+    "cdk"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@sparticuz/chromium": "^119.0.2",
+    "puppeteer-core": "^21.5.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.130",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
